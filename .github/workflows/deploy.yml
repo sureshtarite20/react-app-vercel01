@@ -4,7 +4,8 @@ env:
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
 on:
-  push:
+  pull_request_target:
+    types: [opened, synchronize]
     branches:
       - main  # Set your default branch here
 jobs:
