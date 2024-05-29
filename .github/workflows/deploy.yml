@@ -9,7 +9,7 @@ on:
     branches:
       - main  # Set your default branch here
 jobs:
-  build:
+  deploy-web:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
